@@ -8,6 +8,6 @@
 
 rm a.out
 mpicc jacobi.c -O3 -o  a.out
-mpiexec -n 4 ./a.out
+mpiexec -n 8 ./a.out
 
 python snap.py
