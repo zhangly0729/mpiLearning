@@ -1,0 +1,9 @@
+#scons 
+#
+
+import os
+Import("*")
+import sys
+
+Env=Environment(CC=("mpicc"),ENV=os.environ)
+Env.Program("./src/test.c")
